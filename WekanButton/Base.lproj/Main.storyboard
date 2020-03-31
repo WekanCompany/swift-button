@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WekanButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-ij-U0x" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="147" y="94" width="120" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="17j-FY-u2M"/>
+                                    <constraint firstAttribute="height" constant="34" id="Yq8-6b-Ehe"/>
+                                </constraints>
+                                <state key="normal" title="System Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-Jw-Dqe" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="132" y="148" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="tFg-kO-omG"/>
+                                </constraints>
+                                <state key="normal" title="Text only">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIR-iC-RAw" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="107" y="202" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vki-jZ-qmM"/>
+                                </constraints>
+                                <state key="normal" title="Bordered Text">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wum-Jl-nHU" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="107" y="256" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Wf6-xZ-WJi"/>
+                                </constraints>
+                                <state key="normal" title="Filled Text">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vr-9Y-21C" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="97" y="418" width="220" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="iJW-Vk-FgU"/>
+                                </constraints>
+                                <state key="normal" title="Bordered icon + text">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSO-hS-2qM" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="97" y="310" width="220" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="DHF-Ib-Rkf"/>
+                                </constraints>
+                                <state key="normal" title="Filled icon + text">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBo-yo-LM4" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="97" y="472" width="220" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Iv9-cn-AVD"/>
+                                </constraints>
+                                <state key="normal" title="Bordered text + icon">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-ne-X4u" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="117" y="364" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="bs3-mC-4CN"/>
+                                </constraints>
+                                <state key="normal" title="Filled text + icon">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="llv-7k-GVw">
+                                <rect key="frame" x="124" y="526" width="166" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-us-idd" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="GhZ-If-tFs"/>
+                                            <constraint firstAttribute="height" constant="42" id="i2H-Mh-bvb"/>
+                                        </constraints>
+                                        <state key="normal" title="$100">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESV-nb-I8q" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="0.0" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="3hL-9E-ZL6"/>
+                                            <constraint firstAttribute="width" constant="42" id="dpz-Ld-NvZ"/>
+                                        </constraints>
+                                        <state key="normal" image="medicine">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqG-8N-GRs" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                        <rect key="frame" x="124" y="0.0" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Ux3-c9-Ks4"/>
+                                            <constraint firstAttribute="width" constant="42" id="jeE-YE-yCh"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BSO-hS-2qM" firstAttribute="top" secondItem="Wum-Jl-nHU" secondAttribute="bottom" constant="20" id="08b-w7-7Jl"/>
+                            <constraint firstItem="5Vr-9Y-21C" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="1ij-1z-Ji0"/>
+                            <constraint firstItem="Wum-Jl-nHU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kr-yZ-f89"/>
+                            <constraint firstItem="qBo-yo-LM4" firstAttribute="top" secondItem="5Vr-9Y-21C" secondAttribute="bottom" constant="20" id="36m-GK-C7F"/>
+                            <constraint firstItem="dW8-ij-U0x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Few-gb-vvp"/>
+                            <constraint firstItem="OIR-iC-RAw" firstAttribute="top" secondItem="UeJ-Jw-Dqe" secondAttribute="bottom" constant="20" id="Ge5-IH-bIk"/>
+                            <constraint firstItem="UeJ-Jw-Dqe" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="Lcp-z6-Pus"/>
+                            <constraint firstItem="llv-7k-GVw" firstAttribute="top" secondItem="qBo-yo-LM4" secondAttribute="bottom" constant="20" id="MF1-BX-6wf"/>
+                            <constraint firstItem="5Vr-9Y-21C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N96-Xp-1yM"/>
+                            <constraint firstItem="llv-7k-GVw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OHR-F0-ljV"/>
+                            <constraint firstItem="5Vr-9Y-21C" firstAttribute="top" secondItem="cpa-ne-X4u" secondAttribute="bottom" constant="20" id="QIh-b9-TGc"/>
+                            <constraint firstItem="dW8-ij-U0x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="TDn-OH-y1a"/>
+                            <constraint firstItem="Wum-Jl-nHU" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="TvW-W9-yia"/>
+                            <constraint firstItem="OIR-iC-RAw" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="ZRr-Lg-e8W"/>
+                            <constraint firstItem="BSO-hS-2qM" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="bKi-J5-IML"/>
+                            <constraint firstItem="UeJ-Jw-Dqe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d0v-LY-Sxt"/>
+                            <constraint firstItem="BSO-hS-2qM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPN-Qh-7aa"/>
+                            <constraint firstItem="OIR-iC-RAw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gMy-Fq-QdS"/>
+                            <constraint firstItem="qBo-yo-LM4" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="mFB-oe-LTV"/>
+                            <constraint firstItem="UeJ-Jw-Dqe" firstAttribute="top" secondItem="dW8-ij-U0x" secondAttribute="bottom" constant="20" id="oJv-MI-yzl"/>
+                            <constraint firstItem="qBo-yo-LM4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="otM-gr-fHp"/>
+                            <constraint firstItem="Wum-Jl-nHU" firstAttribute="top" secondItem="OIR-iC-RAw" secondAttribute="bottom" constant="20" id="stn-ml-ccs"/>
+                            <constraint firstItem="cpa-ne-X4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u6E-N7-H16"/>
+                            <constraint firstItem="cpa-ne-X4u" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="yHg-XV-Jn9"/>
+                            <constraint firstItem="cpa-ne-X4u" firstAttribute="top" secondItem="BSO-hS-2qM" secondAttribute="bottom" constant="20" id="zu7-lW-91Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="borderedIconTextBtn" destination="5Vr-9Y-21C" id="2nz-uV-xDz"/>
+                        <outlet property="borderedTextBtn" destination="OIR-iC-RAw" id="exl-RV-5bd"/>
+                        <outlet property="borderedTextIconBtn" destination="qBo-yo-LM4" id="qIB-69-KaH"/>
+                        <outlet property="circleIconBtn" destination="yqG-8N-GRs" id="Xsp-Wl-RQr"/>
+                        <outlet property="filledIconTextBtn" destination="BSO-hS-2qM" id="ab0-QJ-qHG"/>
+                        <outlet property="filledTextBtn" destination="Wum-Jl-nHU" id="Gxd-M7-ZPg"/>
+                        <outlet property="filledTextIconBtn" destination="cpa-ne-X4u" id="2D2-Yd-IRw"/>
+                        <outlet property="iconOnlyBtn" destination="ESV-nb-I8q" id="AuU-13-9j5"/>
+                        <outlet property="systemBtn" destination="dW8-ij-U0x" id="Dan-OJ-xbS"/>
+                        <outlet property="textIconBtn" destination="nbf-us-idd" id="tFi-Ba-rdv"/>
+                        <outlet property="textOnlyBtn" destination="UeJ-Jw-Dqe" id="lfU-Rq-XxL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="medicine" width="64" height="64"/>
+    </resources>
+</document>
