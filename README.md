@@ -24,3 +24,12 @@ loginButton.configure(withContent: .textOnly,
                           cornerType: .smooth,
                           text: "Login")
 ````
+
+## Supports ##
+
+* Corners/Edges - Sharp edge, smooth edge, rounded
+* Outlines/Borders
+* Background colors
+* Background colors with gradient - horizontal and vertical gradients
+* Shadows
+* Buttons with content as text, icons and their combinations
