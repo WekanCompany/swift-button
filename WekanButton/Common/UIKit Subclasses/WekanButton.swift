@@ -13,9 +13,11 @@ enum ButtonBackground {
     case filled
     case outlined
     case clear
+    case none
 }
 
 enum ButtonContent {
+    case system
     case textOnly
     case iconOnly
     case iconAndTextHorizontal
@@ -32,6 +34,7 @@ enum ButtonCorner {
 
 class WekanButton: UIButton {
     
+    /// Corner type property says how the edges of the button should be - sharp edges, smooth edgges or rounded circle shaped buttons
     public var cornerType: ButtonCorner = .sharp {
         didSet {
             switch cornerType {
@@ -47,8 +50,10 @@ class WekanButton: UIButton {
         }
     }
     
+    /// Decides what are the contents of the button - text , image and their combinations
     public var contentType: ButtonContent = .textOnly {
         didSet {
+        
             switch contentType {
             case .textOnly:
                 iconImage = nil
@@ -62,6 +67,8 @@ class WekanButton: UIButton {
                 semanticContentAttribute = .forceRightToLeft
             case .iconAndTextVertical:
                 titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+            case .system:
+                break
             }
         }
     }
@@ -78,6 +85,8 @@ class WekanButton: UIButton {
             case .clear:
                 titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
                 semanticContentAttribute = .unspecified
+            case .none:
+                break
             }
         }
     }
@@ -96,9 +105,9 @@ class WekanButton: UIButton {
             case .clear:
                 backgroundColor = .clear
                 setTitleColor(themeColor, for: .normal)
+            case .none:
+                break
             }
-            backgroundColor = themeColor
-            titleLabel?.textColor = themeColor
         }
     }
     
@@ -138,6 +147,8 @@ class WekanButton: UIButton {
             layer.cornerRadius = cornerRadius
         }
     }
+    
+    
 
     // MARK: -
     
@@ -177,27 +188,38 @@ class WekanButton: UIButton {
     
     // MARK: - Initialize
     
+    func initialize() {
+        clipsToBounds = true
+    }
+    
+    /// initialise buttons with custom properties
+    /// - Parameters:
+    ///   - content: ButtonContent specifies the content type - text or icon or both, etc
+    ///   - background: ButtonBackground specifies the
+    ///   - corner: corner type of the button - sharp edges or rounded or circle type
+    ///   - text: text or tite of the button, optional
+    ///   - icon: image icon for the button, optional
     convenience init(withContent content: ButtonContent,
                      backgroundType background: ButtonBackground,
                      cornerType corner: ButtonCorner,
                      text: String? = nil,
                      icon: UIImage? = nil) {
-        self.init()
+        self.init(type: .custom)
         contentType = content
         cornerType = corner
         backgroundType = background
         titleText = text ?? titleText
         iconImage = icon ?? iconImage
-        clipsToBounds = true
+        initialize()
     }
     
-    /// Configure buttons
+    /// Configure button with custom properties
     /// - Parameters:
-    ///   - content: <#content description#>
-    ///   - background: <#background description#>
-    ///   - corner: <#corner description#>
-    ///   - text: <#text description#>
-    ///   - icon: <#icon description#>
+    ///   - content: ButtonContent specifies the content type - text or icon or both, etc
+    ///   - background: ButtonBackground specifies the 
+    ///   - corner: corner type of the button - sharp edges or rounded or circle type
+    ///   - text: text or tite of the button, optional
+    ///   - icon: image icon for the button, optional
     open func configure(withContent content: ButtonContent,
                         backgroundType background: ButtonBackground,
                         cornerType corner: ButtonCorner,
@@ -208,7 +230,7 @@ class WekanButton: UIButton {
         backgroundType = background
         titleText = text ?? titleText
         iconImage = icon ?? iconImage
-        clipsToBounds = true
+        initialize()
     }
     
     /// For outline buttons, set the outline border color and its width
@@ -231,6 +253,7 @@ class WekanButton: UIButton {
         setTitleColor(textColor, for: .normal)
     }
     
+
     // MARK: -
 
 }
@@ -280,7 +303,7 @@ extension WekanButton {
         
         titleEdgeInsets = UIEdgeInsets(
             top: 0.0,
-            left: !isRightAligned ? -(imageSize.width + spacing) : -imageSize.width,
+            left: isRightAligned ? -(imageSize.width + spacing) : -imageSize.width,
             bottom: 0.0,
             right: !isRightAligned ? -imageSize.width : -(imageSize.width + spacing)
         )
@@ -288,16 +311,17 @@ extension WekanButton {
         let titleSize = text.size(withAttributes: [.font: font])
         imageEdgeInsets = UIEdgeInsets(
             top: 0.0,
-            left: !isRightAligned ? -(titleSize.width + spacing) : -titleSize.width,
-            bottom: 0.0, right: !isRightAligned ? -titleSize.width : -(titleSize.width + spacing)
+            left: isRightAligned ? -(titleSize.width + spacing) : -titleSize.width,
+            bottom: 0.0,
+            right: isRightAligned ? -titleSize.width : -(titleSize.width + spacing)
         )
         
         let edgeOffset = abs(titleSize.width - imageSize.width) / 2.0
         contentEdgeInsets = UIEdgeInsets(
             top: 0.0,
-            left: edgeOffset,
+            left: -edgeOffset,
             bottom: 0.0,
-            right: edgeOffset
+            right: -edgeOffset
         )
     }
 }
@@ -321,6 +345,7 @@ extension WekanButton {
             let d = pow(sinf((2 * Float(Double.pi) * ((xAngle + 0.5) / 2))), 2)
             gradient!.startPoint = CGPoint(x: CGFloat(a), y: CGFloat(b))
             gradient!.endPoint = CGPoint(x: CGFloat(c), y: CGFloat(d))
+            gradient?.cornerRadius = self.cornerRadius
             
             layer.insertSublayer(gradient!, below: imageView?.layer)
         }
@@ -339,4 +364,20 @@ extension WekanButton {
         gradientRotation = rotation ?? gradientRotation
         setupGradientBackground()
     }
+    
+    /**
+      Adds shadow for the button
+      - shadowRadius : 3.0
+      - shadowOpacity : 1.0
+      - shadowColor : black 50%
+      - shadowOffset : CGSize(0,1)
+      */
+     func setShadow() {
+         self.layer.masksToBounds = false
+         self.layer.shadowOpacity = 1.0
+         self.layer.shadowRadius = 3.0
+         self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+         self.layer.shadowColor = UIColor(white: 0, alpha: 0.5).cgColor
+     }
+
 }

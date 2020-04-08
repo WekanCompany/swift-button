@@ -17,78 +17,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-ij-U0x" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="147" y="94" width="120" height="34"/>
+                                <rect key="frame" x="147" y="64" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="17j-FY-u2M"/>
-                                    <constraint firstAttribute="height" constant="34" id="Yq8-6b-Ehe"/>
+                                    <constraint firstAttribute="height" constant="40" id="Yq8-6b-Ehe"/>
                                 </constraints>
                                 <state key="normal" title="System Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-Jw-Dqe" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="132" y="148" width="150" height="34"/>
+                                <rect key="frame" x="132" y="124" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="tFg-kO-omG"/>
                                 </constraints>
-                                <state key="normal" title="Text only">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Text only"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIR-iC-RAw" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="107" y="202" width="200" height="34"/>
+                                <rect key="frame" x="107" y="194" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="vki-jZ-qmM"/>
                                 </constraints>
-                                <state key="normal" title="Bordered Text">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Bordered Text"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wum-Jl-nHU" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="107" y="256" width="200" height="34"/>
+                                <rect key="frame" x="107" y="264" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Wf6-xZ-WJi"/>
                                 </constraints>
-                                <state key="normal" title="Filled Text">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vr-9Y-21C" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="97" y="418" width="220" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="iJW-Vk-FgU"/>
-                                </constraints>
-                                <state key="normal" title="Bordered icon + text">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Filled Text"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSO-hS-2qM" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="97" y="310" width="220" height="34"/>
+                                <rect key="frame" x="97" y="334" width="220" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="DHF-Ib-Rkf"/>
                                 </constraints>
-                                <state key="normal" title="Filled icon + text">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Filled icon + text"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-ne-X4u" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="107" y="404" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bs3-mC-4CN"/>
+                                </constraints>
+                                <state key="normal" title="Filled text + icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vr-9Y-21C" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
+                                <rect key="frame" x="97" y="474" width="220" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="iJW-Vk-FgU"/>
+                                </constraints>
+                                <state key="normal" title="Bordered icon + text"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBo-yo-LM4" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="97" y="472" width="220" height="34"/>
+                                <rect key="frame" x="97" y="544" width="220" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="Iv9-cn-AVD"/>
                                 </constraints>
-                                <state key="normal" title="Bordered text + icon">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Bordered text + icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-ne-X4u" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                <rect key="frame" x="117" y="364" width="180" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="bs3-mC-4CN"/>
-                                </constraints>
-                                <state key="normal" title="Filled text + icon">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="llv-7k-GVw">
-                                <rect key="frame" x="124" y="526" width="166" height="42"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="llv-7k-GVw">
+                                <rect key="frame" x="104" y="624" width="206" height="42"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-us-idd" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
@@ -101,7 +87,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESV-nb-I8q" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                        <rect key="frame" x="62" y="0.0" width="42" height="42"/>
+                                        <rect key="frame" x="82" y="0.0" width="42" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="3hL-9E-ZL6"/>
                                             <constraint firstAttribute="width" constant="42" id="dpz-Ld-NvZ"/>
@@ -111,7 +97,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqG-8N-GRs" customClass="WekanButton" customModule="WekanButton" customModuleProvider="target">
-                                        <rect key="frame" x="124" y="0.0" width="42" height="42"/>
+                                        <rect key="frame" x="164" y="0.0" width="42" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="Ux3-c9-Ks4"/>
                                             <constraint firstAttribute="width" constant="42" id="jeE-YE-yCh"/>
@@ -125,18 +111,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BSO-hS-2qM" firstAttribute="top" secondItem="Wum-Jl-nHU" secondAttribute="bottom" constant="20" id="08b-w7-7Jl"/>
+                            <constraint firstItem="BSO-hS-2qM" firstAttribute="top" secondItem="Wum-Jl-nHU" secondAttribute="bottom" constant="30" id="08b-w7-7Jl"/>
                             <constraint firstItem="5Vr-9Y-21C" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="1ij-1z-Ji0"/>
                             <constraint firstItem="Wum-Jl-nHU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kr-yZ-f89"/>
-                            <constraint firstItem="qBo-yo-LM4" firstAttribute="top" secondItem="5Vr-9Y-21C" secondAttribute="bottom" constant="20" id="36m-GK-C7F"/>
+                            <constraint firstItem="qBo-yo-LM4" firstAttribute="top" secondItem="5Vr-9Y-21C" secondAttribute="bottom" constant="30" id="36m-GK-C7F"/>
                             <constraint firstItem="dW8-ij-U0x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Few-gb-vvp"/>
-                            <constraint firstItem="OIR-iC-RAw" firstAttribute="top" secondItem="UeJ-Jw-Dqe" secondAttribute="bottom" constant="20" id="Ge5-IH-bIk"/>
+                            <constraint firstItem="OIR-iC-RAw" firstAttribute="top" secondItem="UeJ-Jw-Dqe" secondAttribute="bottom" constant="30" id="Ge5-IH-bIk"/>
                             <constraint firstItem="UeJ-Jw-Dqe" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="Lcp-z6-Pus"/>
-                            <constraint firstItem="llv-7k-GVw" firstAttribute="top" secondItem="qBo-yo-LM4" secondAttribute="bottom" constant="20" id="MF1-BX-6wf"/>
+                            <constraint firstItem="llv-7k-GVw" firstAttribute="top" secondItem="qBo-yo-LM4" secondAttribute="bottom" constant="40" id="MF1-BX-6wf"/>
                             <constraint firstItem="5Vr-9Y-21C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N96-Xp-1yM"/>
                             <constraint firstItem="llv-7k-GVw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OHR-F0-ljV"/>
-                            <constraint firstItem="5Vr-9Y-21C" firstAttribute="top" secondItem="cpa-ne-X4u" secondAttribute="bottom" constant="20" id="QIh-b9-TGc"/>
-                            <constraint firstItem="dW8-ij-U0x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="TDn-OH-y1a"/>
+                            <constraint firstItem="5Vr-9Y-21C" firstAttribute="top" secondItem="cpa-ne-X4u" secondAttribute="bottom" constant="30" id="QIh-b9-TGc"/>
+                            <constraint firstItem="dW8-ij-U0x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TDn-OH-y1a"/>
                             <constraint firstItem="Wum-Jl-nHU" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="TvW-W9-yia"/>
                             <constraint firstItem="OIR-iC-RAw" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="ZRr-Lg-e8W"/>
                             <constraint firstItem="BSO-hS-2qM" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="bKi-J5-IML"/>
@@ -146,24 +132,24 @@
                             <constraint firstItem="qBo-yo-LM4" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="mFB-oe-LTV"/>
                             <constraint firstItem="UeJ-Jw-Dqe" firstAttribute="top" secondItem="dW8-ij-U0x" secondAttribute="bottom" constant="20" id="oJv-MI-yzl"/>
                             <constraint firstItem="qBo-yo-LM4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="otM-gr-fHp"/>
-                            <constraint firstItem="Wum-Jl-nHU" firstAttribute="top" secondItem="OIR-iC-RAw" secondAttribute="bottom" constant="20" id="stn-ml-ccs"/>
+                            <constraint firstItem="Wum-Jl-nHU" firstAttribute="top" secondItem="OIR-iC-RAw" secondAttribute="bottom" constant="30" id="stn-ml-ccs"/>
                             <constraint firstItem="cpa-ne-X4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u6E-N7-H16"/>
                             <constraint firstItem="cpa-ne-X4u" firstAttribute="height" secondItem="dW8-ij-U0x" secondAttribute="height" id="yHg-XV-Jn9"/>
-                            <constraint firstItem="cpa-ne-X4u" firstAttribute="top" secondItem="BSO-hS-2qM" secondAttribute="bottom" constant="20" id="zu7-lW-91Y"/>
+                            <constraint firstItem="cpa-ne-X4u" firstAttribute="top" secondItem="BSO-hS-2qM" secondAttribute="bottom" constant="30" id="zu7-lW-91Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="borderedIconTextBtn" destination="5Vr-9Y-21C" id="2nz-uV-xDz"/>
-                        <outlet property="borderedTextBtn" destination="OIR-iC-RAw" id="exl-RV-5bd"/>
-                        <outlet property="borderedTextIconBtn" destination="qBo-yo-LM4" id="qIB-69-KaH"/>
-                        <outlet property="circleIconBtn" destination="yqG-8N-GRs" id="Xsp-Wl-RQr"/>
-                        <outlet property="filledIconTextBtn" destination="BSO-hS-2qM" id="ab0-QJ-qHG"/>
+                        <outlet property="filledIconTextBtn" destination="5Vr-9Y-21C" id="dcg-KP-pas"/>
                         <outlet property="filledTextBtn" destination="Wum-Jl-nHU" id="Gxd-M7-ZPg"/>
-                        <outlet property="filledTextIconBtn" destination="cpa-ne-X4u" id="2D2-Yd-IRw"/>
-                        <outlet property="iconOnlyBtn" destination="ESV-nb-I8q" id="AuU-13-9j5"/>
+                        <outlet property="gradientBGIconTextBtn" destination="BSO-hS-2qM" id="kKM-iQ-Q2H"/>
+                        <outlet property="gradientBGTextIconBtn" destination="cpa-ne-X4u" id="CoV-Qo-ziU"/>
+                        <outlet property="outlinedTextBtn" destination="OIR-iC-RAw" id="x19-ff-f5J"/>
+                        <outlet property="outlinedTextIconBtn" destination="qBo-yo-LM4" id="LQo-Ce-q1U"/>
+                        <outlet property="roundImageBtn" destination="ESV-nb-I8q" id="IyH-Mm-Zzj"/>
+                        <outlet property="roundImageOutlineBtn" destination="yqG-8N-GRs" id="i2a-wo-P7P"/>
+                        <outlet property="roundTextIconBtn" destination="nbf-us-idd" id="fqQ-Mr-Mjk"/>
                         <outlet property="systemBtn" destination="dW8-ij-U0x" id="Dan-OJ-xbS"/>
-                        <outlet property="textIconBtn" destination="nbf-us-idd" id="tFi-Ba-rdv"/>
                         <outlet property="textOnlyBtn" destination="UeJ-Jw-Dqe" id="lfU-Rq-XxL"/>
                     </connections>
                 </viewController>
