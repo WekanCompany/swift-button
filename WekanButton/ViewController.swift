@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var systemBtn: WekanButton!
     @IBOutlet weak var textOnlyBtn: WekanButton!
-    @IBOutlet weak var outlinedTextBtn: WekanButton!
     @IBOutlet weak var filledTextBtn: WekanButton!
     @IBOutlet weak var gradientBGIconTextBtn: WekanButton!
     @IBOutlet weak var gradientBGTextIconBtn: WekanButton!
     @IBOutlet weak var filledIconTextBtn: WekanButton!
     @IBOutlet weak var outlinedTextIconBtn: WekanButton!
+    @IBOutlet weak var outlinedTextBtn: WekanButton!
     @IBOutlet weak var roundTextIconBtn: WekanButton!
     @IBOutlet weak var roundImageBtn: WekanButton!
     @IBOutlet weak var roundImageOutlineBtn: WekanButton!
@@ -30,12 +30,12 @@ class ViewController: UIViewController {
         
         configureSystemButton()
         configureTextOnlyButton()
-        configureTextButtonWithBorder()
         configureFilledButtonWithText()
         configureGradientButtonWithLeftIconRightTextAndShadow()
         configureGradientButtonWithLeftTextRightIcon()
         configureFilledButtonWithLeftIconRightTextAndShadow()
         configureLeftTextRightIconOutlineButton()
+        configureTextButtonWithBorder()
         configureRoundTextOnlyButtonWithBorder()
         configureRoundImageOnlyButton()
         configureRoundImageOnlyOutlineButton()
@@ -54,22 +54,16 @@ class ViewController: UIViewController {
         textOnlyBtn.configure(withContent: .textOnly,
                               backgroundType: .clear,
                               cornerType: .sharp,
-                              text: "Forgot Password")
-        textOnlyBtn.themeColor = .orange
+                              text: "Let's Get Started")
+        textOnlyBtn.themeColor = .systemGreen
     }
-    
-    func configureTextButtonWithBorder() {
-        outlinedTextBtn.configure(withContent: .textOnly,
-                                  backgroundType: .outlined,
-                                  cornerType: .smooth,
-                                  text: "New User?")
-    }
-    
+        
     func configureFilledButtonWithText() {
         filledTextBtn.configure(withContent: .textOnly,
                                 backgroundType: .filled,
                                 cornerType: .sharp,
                                 text: "Register")
+        filledTextBtn.setGradientBackground(startColor: .systemBlue, endColor: .systemPurple, isHorizontalGradient: true)
     }
     
     func configureFilledButtonWithLeftIconRightTextAndShadow() {
@@ -77,9 +71,9 @@ class ViewController: UIViewController {
                                     backgroundType: .filled,
                                     cornerType: .rounded,
                                     text: "Start Shift",
-                                    icon: UIImage(named: "handwash"))
-        gradientBGIconTextBtn.alignHorizontal(spacing: 5.0)
-        gradientBGIconTextBtn.setGradientBackground(startColor: .purple, endColor: .red)
+                                    icon: UIImage(named: "iconLogin"))
+        gradientBGIconTextBtn.alignHorizontal(spacing: -20.0)
+        gradientBGIconTextBtn.setGradientBackground(startColor: .systemBlue, endColor: .systemPurple)
         gradientBGIconTextBtn.setShadow()
 
     }
@@ -89,10 +83,10 @@ class ViewController: UIViewController {
                                     backgroundType: .filled,
                                     cornerType: .rounded,
                                     text: "End Shift",
-                                    icon: UIImage(named: "medicine"))
-        gradientBGTextIconBtn.setGradientBackground(startColor: .yellow, endColor: .green, isHorizontalGradient: true)
-        gradientBGTextIconBtn.alignHorizontal(spacing: 5, isLeftTextRightIcon: false)
-        gradientBGTextIconBtn.textColor = .blue
+                                    icon: UIImage(named: "iconLogout"))
+        gradientBGTextIconBtn.setGradientBackground(startColor: .gray, endColor: .black, isHorizontalGradient: true)
+        gradientBGTextIconBtn.alignHorizontal(spacing: 15, isLeftTextRightIcon: false)
+        gradientBGTextIconBtn.textColor = .white
     }
     
 
@@ -102,27 +96,36 @@ class ViewController: UIViewController {
                                       backgroundType: .filled,
                                       cornerType: .rounded,
                                       text: "Checkin",
-                                      icon: UIImage(named: "covid19"))
-        filledIconTextBtn.alignHorizontal(spacing: 10)
-        filledIconTextBtn.setFilledButton(withBGColor: .purple, textColor: .white)
+                                      icon: UIImage(named: "iconLogin"))
+        filledIconTextBtn.alignHorizontal(spacing: -20)
+        filledIconTextBtn.setFilledButton(withBGColor: .gray, textColor: .black)
         filledIconTextBtn.setShadow()
     }
     
     func configureLeftTextRightIconOutlineButton() {
         outlinedTextIconBtn.configure(withContent: .textAndIconHorizontal,
                                       backgroundType: .outlined,
-                                      cornerType: .smooth,
+                                      cornerType: .sharp,
                                       text: "Checkout",
-                                      icon: UIImage(named: "covid19"))
+                                      icon: UIImage(named: "iconLogout"))
         outlinedTextIconBtn.alignHorizontal(spacing: 10, isLeftTextRightIcon: false)
+        outlinedTextIconBtn.backgroundColor = .white
+        outlinedTextIconBtn.setShadow()
+    }
+    
+    func configureTextButtonWithBorder() {
+        outlinedTextBtn.configure(withContent: .textOnly,
+                                  backgroundType: .outlined,
+                                  cornerType: .smooth,
+                                  text: "Forgot Password?")
     }
     
     func configureRoundTextOnlyButtonWithBorder() {
         roundTextIconBtn.configure(withContent: .textOnly,
                               backgroundType: .clear,
                               cornerType: .rounded, text: "$55")
-        roundTextIconBtn.setOutline(withColor: .orange, width: 1.0)
-        roundTextIconBtn.sizeToFit()
+        roundTextIconBtn.setOutline(withColor: .gray, width: 1.0)
+//        roundTextIconBtn.sizeToFit()
     }
     
     func configureRoundImageOnlyButton() {
@@ -137,8 +140,8 @@ class ViewController: UIViewController {
         roundImageOutlineBtn.configure(withContent: .iconOnly,
                                 backgroundType: .outlined,
                                 cornerType: .rounded,
-                                icon: UIImage(named: "handwash"))
-        roundImageOutlineBtn.setOutline(withColor: .blue, width: 1.0)
+                                icon: UIImage(named: "iconLogin"))
+        roundImageOutlineBtn.setOutline(withColor: .systemBlue, width: 1.0)
     }
     
 }
